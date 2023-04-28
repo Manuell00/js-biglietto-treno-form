@@ -12,38 +12,36 @@ let passeggeroEta, passeggeroKm, passeggeroNome, prezzoBiglietto;
 submitButton.addEventListener('click',
 
     function () {
+        // Prendo il valore dell'input degli anni
+        passeggeroEta = document.getElementById("years").value
+        console.log(passeggeroEta)
 
-        document.getElementById("price").innerHTML = "Ciao"
-        // // Prendo il valore dell'input degli anni
-        // passeggeroEta = document.getElementById("years").value
-        // console.log(passeggeroEta)
+        // Inserisco il valore di input del nome
+        passeggeroNome = document.getElementById("name").value
+        console.log(passeggeroNome)
 
-        // passeggeroNome = document.getElementById("name").value
-        // console.log(passeggeroNome)
-
-        // // Prendo il valore dell'input dei km
-        // passeggeroKm = parseInt(document.getElementById("ride").value)
-        // console.log(passeggeroKm)
-
+        // Prendo il valore dell'input dei km
+        passeggeroKm = parseInt(document.getElementById("ride").value)
+        console.log(passeggeroKm)
 
 
-        // // Definisco il prezzo del biglietto base
-        // prezzoBiglietto = parseFloat(0.21 * passeggeroKm)
+        // Definisco il prezzo del biglietto base
+        prezzoBiglietto = parseFloat(0.21 * passeggeroKm)
 
-        // // Creo delle ipotesi 
-        // if (passeggeroEta == "Young") {
-        //     prezzoBiglietto = prezzoBiglietto - (0.2 * prezzoBiglietto)
-        // }
+        // Creo delle ipotesi 
+        if (passeggeroEta == "Young") {
+            prezzoBiglietto = prezzoBiglietto - (0.2 * prezzoBiglietto)
+        }
 
-        // else if (passeggeroEta == "Elderly") {
-        //     prezzoBiglietto = prezzoBiglietto - (0.4 * prezzoBiglietto)
-        // }
+        else if (passeggeroEta == "Elderly") {
+            prezzoBiglietto = prezzoBiglietto - (0.4 * prezzoBiglietto)
+        }
 
-        // else {
-        //     prezzoBiglietto = prezzoBiglietto
-        // }
+        else {
+            prezzoBiglietto = prezzoBiglietto
+        }
 
-        // // Stampo il prezzo finale del biglietto
-        // document.getElementById("price").innerHTML = `${prezzoBiglietto.toFixed(2)} € `
+        // Stampo il prezzo finale del biglietto
+        document.getElementById("price").innerHTML = `${prezzoBiglietto.toFixed(2)} € `
     }
 )
