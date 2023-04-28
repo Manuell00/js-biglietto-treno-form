@@ -25,18 +25,83 @@
 </head>
 
 <body>
-    <form>
-        <label for="years">Età:</label>
-        <input type="number" id="years"><br>
-        <label for="ride">Number of km for ride:</label>
-        <input type="number" id="ride" name="ride"><br>
-        <input type="button" id="submitButton" value="Submit">
-    </form>
+    <main>
+        <div class="container-fluid text-center">
 
-    <div id="price"></div>
+            <!-- Inserisco la prima row -->
+            <div class="row align-items-center justify-content-center" id="first-main-row">
 
-    <!-- Carico il file javascript -->
-    <script type="text/javascript" src="main.js"></script>
+                <!-- Definisco la grandezza del suo contenuto -->
+                <div class="col-xs-10 col-md-10 col-xl-6">
+
+                    <!-- Definisco una card -->
+                    <div class="card">
+                        <h2 class="card-header">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                        <div class="card-body">
+                            <div class="row align-items-center justify-content-center g-3">
+
+                                <!-- Definisco l'input name -->
+                                <div class="col-md-3">
+                                    <label for="name">
+                                        <h5>Name :</h5>
+                                    </label>
+                                    <input type="text" id="name" class="form-control" placeholder="First name">
+                                </div>
+
+                                <!-- Definisco l'input km -->
+                                <div class="col-md-3">
+                                    <label for="ride">
+                                        <h5>Number of km :</h5>
+                                    </label>
+                                    <input type="number" id="ride" class="form-control" placeholder="Km of ride">
+                                </div>
+
+                                <!-- Definisco l'input di età -->
+                                <div class="col-md-3">
+                                    <label for="years">
+                                        <h5>Age range :</h5>
+                                    </label>
+                                    <select class="form-select" id="years" aria-label="Default select example">
+                                        <option selected>Age range</option>
+                                        <option value="Young">Young</option>
+                                        <option value="Adult">Adult</option>
+                                        <option value="Elderly">Elderly</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!--  Creo la riga inerente ai bottoni-->
+                            <div class="row align-items-center justify-content-center mt-3 mb-3 g-3">
+
+                                <!-- Definisco il bottone GENERA -->
+                                <div class="col-md-2">
+                                    <button type="button" id="sumbitButton" class="btn btn-success">GENERA</button>
+                                </div>
+
+                                <!-- Definisco il bottone ANNULLA -->
+                                <div class="col-md-2">
+                                    <button type="button" id="iii" class="btn btn-danger">ANNULLA</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 
+                    <form>
+                        <label for="years">Età:</label>
+                        <input type="number" id="years"><br>
+                        <label for="ride">Number of km for ride:</label>
+                        <input type="number" id="ride" name="ride"><br>
+                        <input type="button" id="submitButton" value="Submit">
+                    </form> -->
+            </div>
+        <div id="price"></div>
+
+        <!-- Carico il file javascript -->
+        <script type="text/javascript" src="main.js"></script>
 
 
 </body>
