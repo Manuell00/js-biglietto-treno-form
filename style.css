@@ -10,10 +10,21 @@ body {
     background-color: rgba(219, 27, 27, 0.703);
 }
 
+h6{
+    font-weight: 700;
+}
+h6 span{
+    font-weight: 300;
+}
+
 /* MAIN */
 
 #first-main-row{
     margin-top: 30px;
+}
+
+#second-main-row{
+    margin-top: 80px;
 }
 
 .card h5{
@@ -26,4 +37,13 @@ body {
 
 .form-select {
     border: 1px solid rgba(219, 27, 27, 0.703) ;
+}
+
+/* Definisco la parte del biglietto */
+#nome-utente-block{
+    background-color: grey;
+}
+
+#nome-utente{
+    display: block;
 }

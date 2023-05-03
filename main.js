@@ -41,7 +41,20 @@ submitButton.addEventListener('click',
             prezzoBiglietto = prezzoBiglietto
         }
 
-        // Stampo il prezzo finale del biglietto
-        document.getElementById("price").innerHTML = `${prezzoBiglietto.toFixed(2)} € `
+        // Stampo il nome dell'utente del biglietto
+        document.getElementById("nome-utente").innerHTML = passeggeroNome
+
+        // Stampo il nome dell'offerta dell'utente del biglietto
+        document.getElementById("offerta-utente").innerHTML = passeggeroEta
+
+        // Stampo numero della carrozza dell'utente
+        document.getElementById("carrozza-utente").innerHTML = Math.floor(Math.random() * 10)
+        
+        // Stampo il codice dell'utente del biglietto
+        document.getElementById("codice-utente").innerHTML = Math.floor(Math.random() * 100) + 1
+       
+       // Stampo il prezzo dell'utente del biglietto
+        document.getElementById("prezzo-utente").innerHTML = `${prezzoBiglietto.toFixed(2)} € `
+   
     }
 )

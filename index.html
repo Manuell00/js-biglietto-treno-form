@@ -28,7 +28,7 @@
     <main>
         <div class="container-fluid text-center">
 
-            <!-- Inserisco la prima row -->
+            <!-- Inserisco la PRIMA ROW -->
             <div class="row align-items-center justify-content-center" id="first-main-row">
 
                 <!-- Definisco la grandezza del suo contenuto -->
@@ -88,10 +88,102 @@
                     </div>
                 </div>
             </div>
-        <div id="price"></div>
 
-        <!-- Carico il file javascript -->
-        <script type="text/javascript" src="main.js"></script>
+
+
+
+
+            <!-- Inserisco la SECONDA ROW -->
+            <div class="row align-items-center justify-content-center" id="second-main-row">
+
+                <!-- Definisco la grandezza del suo contenuto -->
+                <div class="col-xs-10 col-md-10 col-xl-6">
+
+                    <!-- Definisco una card -->
+                    <div class="card">
+                        <h2 class="card-header">IL TUO BIGLIETTO </h2>
+
+                        <!-- Inserisco il body della card -->
+                        <div class="card-body">
+                            <div class="row align-items-center justify-content-md-start g-3">
+                                <div class="col-md-5">
+                                    <h5>DETTAGLIO PASSEGGERI</h5>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row align-items-center justify-content-between  g-3">
+
+                                <!-- Inserisco il div contente il blocco dell'utente -->
+                                <div class="col-md-3" id="nome-utente-block">
+                                    <h6>Nome Passeggero : <span id="nome-utente"></span></h6>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <!-- Inserisco la riga con i nomi -->
+                                    <div class="row align-items-center justify-content-between g-3">
+                                        <!-- Inserisco la parte inerente all'offerta -->
+                                        <div class="col-md-2">
+                                            <h6>Offerta </h6>
+                                        </div>
+
+                                        <!-- Inserisco la parte inerente alla carrozza -->
+                                        <div class="col-md-2">
+                                            <h6>Carrozza  </h6>
+                                        </div>
+
+                                        <!-- inserisco la parte inerente al codice utente -->
+                                        <div class="col-md-2">
+                                            <h6>Codice CP </h6>
+                                        </div>
+
+                                        <!-- Inserisco la parte inerente al costo del biglietto -->
+                                        <div class="col-md-2">
+                                            <h6>Costo Biglietto </h6>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- Inserisco la riga con i valori dei nomi -->
+                                    <div class="row align-items-center justify-content-between g-3">
+                                        <!-- Inserisco la parte inerente all'offerta -->
+                                        <div class="col-md-2">
+                                            <span id="offerta-utente"></span>
+                                        </div>
+
+                                        <!-- Inserisco la parte inerente alla carrozza -->
+                                        <div class="col-md-2">
+                                            <span id="carrozza-utente"></span>
+                                        </div>
+
+                                        <!-- inserisco la parte inerente al codice utente -->
+                                        <div class="col-md-2">
+                                            <span id="codice-utente"></span>
+                                        </div>
+
+                                        <!-- Inserisco la parte inerente al costo del biglietto -->
+                                        <div class="col-md-2">
+                                            <span id="prezzo-utente"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carico il file javascript -->
+            <script type="text/javascript" src="main.js"></script>
 
 
 </body>
