@@ -1,15 +1,15 @@
-// Il programma dovrà chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero. Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-// il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// va applicato uno sconto del 20% per i minorenni
-// va applicato uno sconto del 40% per gli over 65.
-// L’output del prezzo finale va messo con massimo due decimali.
+
 
 // VARIABILI
 let passeggeroEta, passeggeroKm, passeggeroNome, prezzoBiglietto;
+const firstMainRow = document.getElementById("first-main-row");
+const secondMainRow = document.getElementById("second-main-row");
 
+// Get reference to the "GENERA" button
+const generaButton = document.getElementById("submitButton");
 
-
-submitButton.addEventListener('click',
+// Aggiungo l'evento al click
+generaButton.addEventListener('click',
 
     function () {
         // Prendo il valore dell'input degli anni
@@ -55,6 +55,8 @@ submitButton.addEventListener('click',
        
        // Stampo il prezzo dell'utente del biglietto
         document.getElementById("prezzo-utente").innerHTML = `${prezzoBiglietto.toFixed(2)} € `
+
+        secondMainRow.classList.remove('no-visible')
    
     }
 )
